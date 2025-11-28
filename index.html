@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAS KELAS X210</title>
+</head>
+<style>
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .brand{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .navbar{
+    z-index: 999;
+  }
+  .navbar li:hover {
+    cursor: pointer;
+  }
+  .center {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .footer {
+    margin-top: auto;
+    background-color: #6AA945;
+  }
+
+  .contain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;   /* vertical centering */
+  }
+
+
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position:sticky; top:0; background-color: #6AA945;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <div class="brand">
+          <img src="./img/Logo-Serviam-hi-res-2-300x300.png" alt="Bootstrap" width="30" height="30">
+        </div>
+        <div class="brand">
+          <p class="nav-link">SAS Kolaborasi</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./anggota.html">Anggota</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sejarah.html">Pengaruh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./uud.html">UUDNRI 1945</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./video.html">Produk</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- jumbotron -->
+  <div class="jumbotron" style="background: url(./img/IMG_2221-scaled.jpg) center/cover;">
+    <br>
+    <div style="margin-left: 10rem;margin-bottom: 5%;margin-top: 5%;height: 500px;">
+      <h1 class="text-light">Mengurangi penggunaan bahan kimia dan beralih ke produk organik</h1>
+      <h2 class="text-light">Dipersembahkan kelompok 10</h2>
+      <br>
+      <a class="btn btn-success" src="./anggota.html" style="margin:auto">Anggota</a>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- main body -->
+  <div class="contain">
+    <div style="margin: 5%;">
+      <h1 class="text-dark">Mengapa Tema Ini?</h1>
+      <p class="text-dark" style="font-size: 24px;"> Kami memilih tema ini karena banyak produk-produk yang digunakan sehari-hari tidak organik sehingga mencemarkan lingkungan sekitar. Produk-produk yang dimaksud mulai dari plastik, styrofoam, dan bahan anorganik lainnya.</p>
+    </div>
+    <div style="margin: 5%;">
+      <img src="./img/Falahi-Mubarok-Sampah-Cemari-Pesisir-Tuban-5-1536x1024.jpg" alt="Limbah Anorganik" style="width: 75%;height: 100%;margin-left: auto;margin-right: auto;display: block;">
+    </div>
+  </div>
+
+  <br>
+
+  <!-- nilai serviam -->
+  <h1 class="text-dark center" style="width: 100%;">Nilai Serviam</h1>
+  <p class="d-inline-flex gap-1 center">
+    <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Cinta dan belas kasih</button>
+    <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Totalitas</button>
+  </p>
+  <div class="row">
+    <div class="col" style="margin: 2%;">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+          <h5 style="font-weight: 600;">Cinta pada lingkungan dan peduli sehingga merawat dan menjaga lingkungan.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="margin: 2%;">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          <h5 style="font-weight: 600;">Totalitas dalam melestarikan lingkungan dan banyak peduli dengan lingkungan.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer" style=" background-color: #7db45d;">
+    <div class="center">
+      <img src="./img/Logo-Kampus-St.Theresia-1b.png" style="width: 25%;height: 25%;">  
+    </div>
+    <br>
+    <div class="center">
+      <h1 class="text-light">SAS Kolaborasi</h1>
+    </div>
+  </footer>
+
+  </body>
+</html>

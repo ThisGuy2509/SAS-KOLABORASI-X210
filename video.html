@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAS KELAS X210</title>
+</head>
+<style>
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .brand{
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+  
+  .navbar{
+    z-index: 999;
+  }
+  
+  .navbar li:hover {
+    cursor: pointer;
+  }
+  .center {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .footer {
+    margin-top: auto;
+    background-color: #6AA945;
+  }
+
+  .contain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;   /* vertical centering */
+  }
+
+
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position:sticky; top:0; background-color: #6AA945;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <div class="brand">
+          <img src="./img/Logo-Serviam-hi-res-2-300x300.png" alt="Bootstrap" width="30" height="30">
+        </div>
+        <div class="brand">
+          <p class="nav-link">SAS Kolaborasi</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./anggota.html">Anggota</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sejarah.html">Pengaruh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./uud.html">UUDNRI 1945</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./video.html">Produk</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="margin: 2rem;">
+        <video controls class="d-block w-10 center" alt="..." style="object-fit: cover; aspect-ratio: 16 / 9;width: 1280px;height: 720px;">
+            <source src="./img/Video Kelompok 3 PKWU.mp4" type="video/mp4">
+        </video>
+        <h1 class="center text-dark">Eco-Print Oleh Kelompok 3 Lexy</h1>
+    </div>
+    <div class="carousel-item" style="margin: 2rem;">
+        <video controls class="d-block w-10 center" alt="..." style="object-fit: cover; aspect-ratio: 16 / 9;width: 1280px;height: 720px;">
+            <source src="./img/vidio pkwu.mp4" type="video/mp4">
+        </video>
+        <h1 class="center text-dark">Pembungkus Makanan Lilin Oleh Kelompok 6 Matthew</h1>
+    </div>
+    <div class="carousel-item">
+        <video controls class="d-block w-10 center" alt="..." style="object-fit: cover; aspect-ratio: 16 / 9;width: 1280px;height: 720px;">
+            <source src="./img/WhatsApp Video 2025-11-28 at 23.12.14_e6ec2136.mp4" type="video/mp4">
+        </video>
+        <h1 class="center text-dark">Parfum Pada Oleh Kelompok 5 Valerie</h1>
+    </div>
+  </div>
+  <button class="carousel-control-prev btn btn-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next btn btn-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <!-- footer -->
+  <footer class="footer" style=" background-color: #7db45d;">
+    <div class="center">
+      <img src="./img/Logo-Kampus-St.Theresia-1b.png" style="width: 25%;height: 25%;">  
+    </div>
+    <br>
+    <div class="center">
+      <h1 class="text-light">SAS Kolaborasi</h1>
+    </div>
+  </footer>
+
+  </body>
+</html>

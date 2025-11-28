@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAS KELAS X210</title>
+</head>
+<style>
+  body{
+    background-color: #6AA945;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .navbar{
+    z-index: 999;
+  }
+
+  .navbar li:hover {
+    cursor: pointer;
+  }
+
+  .center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+
+  p{
+    font-size: large;
+  }
+  
+  .cards {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .cards:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  }
+
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position:sticky; top:0; background-color: #6AA945;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <div class="brand">
+          <img src="./img/Logo-Serviam-hi-res-2-300x300.png" alt="Bootstrap" width="30" height="30">
+        </div>
+        <div class="brand">
+          <p class="nav-link">SAS Kolaborasi</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./anggota.html">Anggota</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sejarah.html">Pengaruh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./uud.html">UUDNRI 1945</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./video.html">Produk</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- jumbotron -->
+  <div class="jumbotron" style="background: url(./img/IMG_2221-scaled.jpg) center/cover">
+    <br>
+    <div style="margin-left: 10rem;margin-bottom: 5%;margin-top: 5%;height: 500px;">
+      <h1 class="text-light" style="font-size: 72px;">Undang - Undang Dasar</h1>
+    </div>
+  </div>  
+
+  <!-- main body -->
+  <!-- ppkn -->
+  <h1 class="text-dark" style="margin: 2rem;">Keterkaitan Dengan Undang-Undang Dasar Negara</h1>
+  <div id="accordion" style="margin: 2rem;">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Pasal 28H ayat (1)
+          </button>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+        <div class="card-body">
+          <p>“Setiap orang berhak hidup sejahtera lahir dan batin, bertempat tinggal, dan mendapatkan lingkungan hidup yang baik dan sehat serta berhak memperoleh pelayanan kesehatan.” </p>
+          <p>Menjadi dasar hak warga negara atas lingkungan sehat, termasuk pangan bebas bahan kimia berbahaya.  </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-success collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Pasal 33 ayat (4)
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+          <div class="card-body">
+            <p>“Perekonomian nasional diselenggarakan berdasarkan demokrasi ekonomi dengan prinsip kebersamaan, efisiensi berkeadilan, berkelanjutan, berwawasan lingkungan, kemandirian, serta dengan menjaga keseimbangan kemajuan dan kesatuan ekonomi nasional.”</p>
+            <p>Menekankan prinsip berkelanjutan dan berwawasan lingkungan, yang sejalan dengan praktik pertanian organik.  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sejarah -->
+  <h1 class="text-dark" style="margin: 2rem;">Tokoh Pertanian Organik</h1>
+  <div class="row" style="margin: 2rem;">
+    <div class="col-sm-6 mb-3 mb-sm-0 center">
+      <div class="card cards" style="max-width: 1000px;height: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/WhatsApp Image 2025-11-27 at 07.42.58_33404355.jpg" class="img-fluid rounded-start" alt="..." style="object-fit: cover;width: 100%;height: 100%;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Sir Albert Howard</h5>
+              <ul>
+                <li class="card-text">Pelopor pertanian organik modern: Howard dianggap sebagai “Bapak Pertanian Organik” karena gagasannya menjadi fondasi gerakan organik global.</li>
+                <li class="card-text">Proses Indore (Indore Process): Howard mengembangkan teknik pengomposan yang sistematis, menggunakan limbah tanaman dan kotoran hewan untuk menghasilkan pupuk alami yang memperbaiki tanah.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 center">
+      <div class="card cards" style="max-width: 1000px;height: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/WhatsApp Image 2025-11-27 at 07.47.32_7a293523.jpg" class="img-fluid rounded-start" alt="..." style="object-fit: cover;width: 100%;height: 100%;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Gabriel Howard</h5>
+              <ul>
+                <li class="card-text">Kolaborasi dengan Albert Howard: Gabriel Howard, istrinya, ikut serta dalam penelitian dan pengembangan metode pertanian organik pada 1930-1940-an.</li>
+                <li class="card-text">Pengaruh dari biodinamika dan tradisi lokal: Bersama Albert, ia menggabungkan pengetahuan botani, biodinamika, dan praktik tradisional India untuk menciptakan sistem pertanian organik yang lebih terstruktur.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <br>
+
+  <h1 class="text-dark center">Sekarang Bagaimana?</h1>
+  <p class="text-dark center">Namun, masyarakat masa kini sudah mulai mendapatkan edukasi tentang produk pertanian yang mengandung residu kimia yang tinggi akan memiliki dampak negatif dalam jangka panjang. Masyarakat mulai mengkhawatirkan kesehatannya dan mulai beralih pada produk pertanian organik. Tapi, tidak mudah mendapatkan produk organik.</p>
+
+  <!-- footer -->
+  <footer class="footer" style="background-color: #7db45d;width: 100vw;">
+    <div class="center">
+      <img src="./img/Logo-Kampus-St.Theresia-1b.png" style="width: 25%;height: 25%;">  
+    </div>
+    <br>
+    <div class="center">
+      <h1 class="text-light">SAS Kolaborasi</h1>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+

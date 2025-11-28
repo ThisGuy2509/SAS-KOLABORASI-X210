@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAS KELAS X210</title>
+</head>
+<style>
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .brand{
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+  .navbar{
+    z-index: 999;
+  }
+  
+  .navbar li:hover {
+    cursor: pointer;
+  }
+  .center {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .footer {
+    margin-top: auto;
+    background-color: #6AA945;
+  }
+
+  .contain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;   /* vertical centering */
+  }
+
+
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position:sticky; top:0; background-color: #6AA945;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <div class="brand">
+          <img src="./img/Logo-Serviam-hi-res-2-300x300.png" alt="Bootstrap" width="30" height="30">
+        </div>
+        <div class="brand">
+          <p class="nav-link">SAS Kolaborasi</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./anggota.html">Anggota</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sejarah.html">Pengaruh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./uud.html">UUDNRI 1945</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./video.html">Produk</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <h1 class="text-dark center" style="height: 50px;">Pengaruh Terhadap Berbagai Hal!</h1>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 2rem;">
+        <div class="col">
+            <div class="card" style="width: 33rem;">
+                <img src="./img/sapta-usaha-tani-kesejahteraan-petani.jpg" class="card-img-top" alt="..." style="object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Pengaruh pada Petani</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Kesadaran lingkungan meningkat: Banyak petani mulai memahami dampak negatif pupuk dan pestisida kimia terhadap tanah, air, dan kesehatan.</li>
+                    <li class="list-group-item">Kembali ke metode tradisional: Petani di beberapa daerah (misalnya Bali, Jawa Tengah, dan Yogyakarta) menghidupkan kembali praktik alami seperti penggunaan pupuk kompos, pupuk kandang, dan pestisida nabati.</li>
+                    <li class="list-group-item">Tantangan ekonomi: Produksi organik membutuhkan biaya dan tenaga lebih besar, sehingga tidak semua petani mampu beralih sepenuhnya.</li>
+                </ul>
+            </div>
+        </div>
+  <div class="col">
+    <div class="card" style="width: 33rem;">
+        <img src="./img/15.jpg" class="card-img-top" alt="..." style="object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">Pengaruh pada Konsumen</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Perubahan pola konsumsi: Masyarakat kota besar mulai mencari produk organik karena dianggap lebih sehat dan aman dari residu kimia.</li>
+            <li class="list-group-item">Harga lebih tinggi: Produk organik biasanya lebih mahal, sehingga hanya sebagian masyarakat yang rutin mengonsumsinya.</li>
+            <li class="list-group-item">Meningkatnya kesadaran kesehatan: Konsumen lebih kritis terhadap label pangan dan mulai peduli pada sumber makanan mereka.</li>
+        </ul>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card" style="width: 33rem;">
+        <img src="./img/Macam-Macam-Lingkungan.jpg" class="card-img-top" alt="..." style="object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">Pengaruh pada Lingkungan</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Perbaikan kualitas tanah: Lahan yang rusak akibat penggunaan pupuk kimia mulai dipulihkan dengan sistem organik.</li>
+            <li class="list-group-item">Pengurangan pencemaran: Berkurangnya penggunaan pestisida kimia membantu menjaga kualitas air dan ekosistem lokal.</li>
+            <li class="list-group-item">Pelestarian keanekaragaman hayati: Pertanian organik mendorong penggunaan varietas lokal dan menjaga keseimbangan ekosistem.</li>
+        </ul>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+  <div class="contain" style="height: fit-content;">
+    <div style="margin: 5%;">
+      <h1 class="text-dark">Penerapan Hidup Bertanggung Jawab: Mengurangi Bahan Kimia & Beralih ke Produk Organik</h1>
+      <p class="text-dark" style="font-size: 24px;">Mengurangi penggunaan bahan kimia dan beralih ke produk organik adalah bagian dari gaya hidup bertanggung jawab yang berdampak positif bagi kesehatan, lingkungan, dan keberlanjutan. Berikut beberapa penerapannya:</p>
+    </div>
+    <div style="margin: 5%;">
+      <h1 class="text-dark">Dalam Kehidupan Sehari-hari</h1>
+      <h2 class="text-dark">Makanan:</h2>
+      <p class="text-dark" style="font-size: 24px;">
+Pilih sayuran, buah, dan daging organik yang bebas pestisida dan hormon sintetis.
+Kurangi konsumsi makanan olahan yang mengandung pengawet dan pewarna kimia.</p>
+        <h2 class="text-dark">Produk Rumah Tangga:</h2>
+        <p class="text-dark" style="font-size: 24px;">Gunakan sabun cuci, deterjen, dan pembersih berbahan alami (misalnya berbasis jeruk, cuka, atau baking soda).
+
+Hindari penggunaan pestisida kimia di rumah, ganti dengan metode alami seperti tanaman pengusir serangga.
+</p>
+  </div>
+  
+  <div style="margin: 5%;">
+      <h1 class="text-dark">Dampak Positif
+</h1>
+      <p class="text-dark" style="font-size: 24px;">Kesehatan: Mengurangi risiko paparan zat berbahaya yang bisa menumpuk dalam tubuh.
+
+Lingkungan: Mengurangi pencemaran tanah, air, dan udara akibat limbah kimia.
+
+Ekonomi Lokal: Mendukung petani dan produsen organik yang biasanya lebih ramah lingkungan.
+
+</p>
+<h1 class="text-dark">Kekurangan Produk Organik Dibanding Produk Kimia:
+</h1>
+      <p class="text-dark" style="font-size: 24px;">Harga lebih tinggi, 
+hasil panen lebih rendah, 
+dan daya simpan lebih pendek.</p>
+    </div>
+    <div style="margin: 5%;">
+      <h1 class="text-dark">Langkah Praktis
+</h1>
+      <p class="text-dark" style="font-size: 24px;">Membawa tas belanja kain untuk mengurangi plastik sekali pakai.
+
+Membuat kompos dari sisa makanan untuk mengurangi sampah organik.
+
+Menanam tanaman organik di pekarangan rumah atau balkon.
+
+Membaca label produk dengan teliti sebelum membeli.
+
+</p>
+    </div>
+
+  <!-- footer -->
+  <footer class="footer" style=" background-color: #7db45d; width: 100vw;">
+    <div class="center">
+      <img src="./img/Logo-Kampus-St.Theresia-1b.png" style="width: 25%;height: 25%;">  
+    </div>
+    <br>
+    <div class="center">
+      <h1 class="text-light">SAS Kolaborasi</h1>
+    </div>
+  </footer>
+
+  </body>
+</html>
